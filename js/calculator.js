@@ -6,12 +6,9 @@ var newclose = null;
 
 do {
   var value1 = parseFloat(prompt('enter first value'));
-  var choice = prompt('Choose your action (a)dd  (s)ubtract (m)ultiply (d)ivide') || "a";
+  var choice = prompt('Choose your action (a)dd  (s)ubtract (m)ultiply (d)ivide "add will be selected as default if no operator is chosen"')|| "a";
   var value2 = parseFloat(prompt('enter the second value'));
 
-  if (choice == "") {
-    alert("add will be selected as default if no operator is chosen");
-  }
 
   switch (choice) {
   case "a":
